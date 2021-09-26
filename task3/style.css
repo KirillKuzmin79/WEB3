@@ -1,0 +1,115 @@
+.page{
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+}
+nav{
+  display: flex;
+  flex-direction: column;
+  clear: both;
+  width: 100%;
+}
+#menu a{
+  margin-right: 50px;
+}
+
+table, th, td {
+    border: 1px solid black;
+	margin: 10px auto;
+}
+
+#name{
+  color: white;
+}
+
+header{
+	width: 100%;
+	background: #3BA3D0;
+	height: 120px;
+}
+body{
+
+  background-image: linear-gradient(#B0E0E6,#87CEFA, #ADD8E6);
+}
+
+div.title{
+	font-size: 32px;
+	padding-top: 32px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#logoimg{
+  float:left;
+  margin:10px;
+  width:100px;
+  height:100px;
+}
+
+.divg{
+  width:650px;
+  background-color:#E0FFFF;
+  margin: 0 auto;
+  margin-top:20px;
+  padding:10px;
+}
+
+
+.page :nth-child(1){
+  order: 1;
+}
+.page :nth-child(3){
+  order: 2;
+}
+
+.page :nth-child(2){
+  order: 3;
+}
+.page :nth-child(4){
+  order: 4;
+}
+
+@media screen and (min-width: 800px) and (orientation: landscape) {
+  .header {
+    flex-direction: row;
+  }
+
+  nav {
+    flex-direction: row;
+    max-width: 600px;
+    text-align: center;
+  }
+
+
+.page{
+  margin: 0 auto;
+  padding: 10px;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+}
+  .page :nth-child(2){
+    order: 2;
+  }
+
+  .page :nth-child(3){
+    order: 3;
+  }
+
+  .form{
+    width: 540px;
+  }
+
+}
+
+footer{
+	width: 100%;
+	background: #3BA3D0;
+	height: 40px;
+	padding: 20px 0;
+	margin: 10px 0 0 0;
+}
+
+footer p{
+	font-size: 16px;
+}
